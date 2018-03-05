@@ -16,7 +16,7 @@ h2 {
 }
 
 .nav {
-	width: 60%;
+	width: 70%;
 	margin-left: auto;
 	margin-right: 20px;
 }
@@ -36,6 +36,13 @@ h2 {
 	background-color: green;
 }
 
+#clock {
+	font-family: "Orbitron", sarif;
+	font-size: 10px;
+	padding: 0px 5px;
+	height: 5px;
+	margin-top: 11px;
+}
 
 main {
 	color: #70b7ff;
