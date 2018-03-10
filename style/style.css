@@ -15,6 +15,30 @@ h2 {
 	text-decoration: underline;
 }
 
+.home {
+	background: linear-gradient(#5a4389, #3695af);
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.something {
+	background-image: url("../img/mountain.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.icon_display {
+	background-image: url("../img/background_a.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.media_display {
+	background-image: url("../img/sea.png");
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
 .nav {
 	width: 70%;
 	margin-left: auto;
@@ -53,8 +77,9 @@ main {
 	border: 5px solid #d188e3;
 	width: 350px;
 	height: 350px;
-	margin: 15px 10px;
+	margin: 50px 10px;
 	border-radius: 50%;
+	opacity: 0.5;
 }
 .main_image:hover {
 	transform: rotate(270deg);
@@ -75,7 +100,6 @@ main {
 	color: #666;
 	padding: 5px 8px;
 }
-
 
 footer {
 	text-align: center;
@@ -101,11 +125,6 @@ footer {
 	font-family: "Neutra Text", sarif;
 }
 
-.icon_display {
-	background-image: url("../img/background_a.jpg");
-	background-size: 100%;
-}
-
 .shelves {
 	text-align: center;
 	margin: 60px 10px;
@@ -117,7 +136,7 @@ footer {
 	background-color: #d1b3e3; 
 	border: 5px dotted #70b7ff;
 	border-radius: 50%;
-	margin-bottom: 15px;
+	margin: 15px 0px;
 	opacity: 0.8;
 }
 
@@ -134,4 +153,32 @@ footer {
 	width: 440px;
 	margin: auto;
 	border-radius: 10px;
+}
+
+
+.media_player li {
+	display: inline-block;
+	margin: 0px;
+}
+
+.media_player img {
+	opacity: 0.5;
+	height: 300px;
+	width: 300px;
+}
+.media_player img:hover {
+	opacity: 0.75;
+	height: 290px;
+	width: 290px;
+}
+
+.video {
+	padding: 0px;
+	margin: 0px;
+	opacity: 0.4;
+	border: 5px dotted #d188e3;
+}
+
+#learning_sites {
+	margin: 35px 5px;
 }
