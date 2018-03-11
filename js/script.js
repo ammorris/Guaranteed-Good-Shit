@@ -6,6 +6,9 @@ var gamecube = document.getElementById("gamecube");
 var gameboy = document.getElementById("gameboy");
 var ds = document.getElementById("ds");
 const clock = document.getElementById("clock");
+const inputBar = document.getElementById('myTextInput');
+const myButton = document.getElementById('myButton');
+
 
 function blink() {
     var colon = document.getElementById("colon");
@@ -17,6 +20,7 @@ document.body.onload = function() {
     setInterval("updateClock()", 1000);
     setInterval("blink()", 500);
 }
+
 
 function updateClock() {
     var today = new Date();
@@ -31,29 +35,42 @@ function updateClock() {
     document.getElementById('clock').innerHTML = time;
 }
 
-snes.onclick = function() {
-	alert("it works");
-}
-genesis.onclick = function() {
-	alert("it works");
-}
-
-playstation.onclick = function() {
-	alert("it works");
+myButton.onclick = function() {
+    var searchText = inputBar.value;
+    // alert("At this point, a Google search for " + searchText + " should pop open.");
+    var searchString = "https://www.google.com/search?q=" + searchText;
+    // alert("Its url should read " + searchString + ".");
+    window.open(searchString, "_self");
 }
 
-n64.onclick = function() {
-	alert("it works");
+window.onkeydown = function(key) {
+    if (key.keycode == 13) {
+        myButton.click();
+    }
 }
+// snes.onclick = function() {
+// 	alert("it works");
+// }
+// genesis.onclick = function() {
+// 	alert("it works");
+// }
 
-gamecube.onclick = function() {
-	alert("it works");
-}
+// playstation.onclick = function() {
+// 	alert("it works");
+// }
 
-gameboy.onclick = function() {
-	alert("it works");
-}
+// n64.onclick = function() {
+// 	alert("it works");
+// }
 
-ds.onclick = function() {
-	alert("it works");
-}
+// gamecube.onclick = function() {
+// 	alert("it works");
+// }
+
+// gameboy.onclick = function() {
+// 	alert("it works");
+// }
+
+// ds.onclick = function() {
+// 	alert("it works");
+// }
