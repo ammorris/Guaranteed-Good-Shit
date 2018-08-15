@@ -40,7 +40,7 @@ h2 {
 }
 
 .nav {
-	width: 80%;
+	width: 64%;
 	margin-left: auto;
 	margin-right: 20px;
 }
@@ -54,6 +54,7 @@ h2 {
 	border-radius: 3%;
 	box-shadow: 2px -2px 3px #bbb;
 	padding: 5px 10px;
+	opacity: 0.4;
 }
 .nav li:hover {
 	color: orange;
@@ -62,10 +63,10 @@ h2 {
 
 #clock {
 	font-family: "Orbitron", sarif;
-	font-size: 10px;
+	font-size: 12px;
 	padding: 0px 5px;
 	height: 5px;
-	margin-top: 11px;
+/*	margin-top: 11px;*/
 }
 
 #myTextInput {
@@ -178,13 +179,13 @@ footer {
 
 .media_player img {
 	opacity: 0.5;
-	height: 300px;
-	width: 300px;
+	height: 250px;
+	width: 250px;
 }
 .media_player img:hover {
 	opacity: 0.75;
-	height: 290px;
-	width: 290px;
+	height: 240px;
+	width: 240px;
 }
 
 .video {
@@ -196,4 +197,13 @@ footer {
 
 #learning_sites {
 	margin: 35px 5px;
+}
+
+#music_links li {
+	display: inline-block;
+	background-color: purple;
+	border-radius: 10px;
+	padding: 4px;
+	border: 2px dotted white;
+	opacity: 0.3;
 }
